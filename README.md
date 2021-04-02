@@ -7,12 +7,13 @@ Useful for some traditional ticket systems that do not provide APIs and LINE int
 ### Tested with
 - Office365's IMAP server
 - Python 3.9.2
-- beautifulsoup4 (4.9.3)
+- beautifulsoup4 (v4.9.3)
+- requests (v2.25.1)
 
 ### Installation and Usage
-1. Install Beautifulsoup4
+1. Install beautifulsoup4 and requests
    ```sh
-   pip install beautifulsoup4
+   pip install -r requirements.txt
    ```
 
 2. Fill all variables below in ```run.py```
