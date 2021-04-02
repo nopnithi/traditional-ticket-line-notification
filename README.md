@@ -11,7 +11,7 @@ Useful for some traditional ticket systems that do not provide APIs and LINE int
 - requests (v2.25.1)
 
 ### Installation and Usage
-1. Install beautifulsoup4 and requests
+1. Install ```beautifulsoup4``` and ```requests```
    ```sh
    pip install -r requirements.txt
    ```
