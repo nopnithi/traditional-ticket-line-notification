@@ -22,9 +22,11 @@ Useful for some traditional ticket systems that do not provide APIs and LINE int
 - FILTER_FROM = 'filter-all-emails-from-X'
 - FILTER_HEADER = 'filter-the-header-that-contains-X'
 
-3. Modify the ```extract_html``` function in ```run.py``` to match with your email body
+3. Paste your LINE token at ```line 6``` in  ```notifications.py```
 
-4. Run the script
+4. Modify the ```extract_html``` function in ```run.py``` to match with your email body
+
+5. Run the script
    ```sh
    python run.py
    ```
