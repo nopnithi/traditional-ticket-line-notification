@@ -13,7 +13,7 @@ EMAIL = '<your-email>'
 PASSWORD = '<your-email-password>'
 SERVER = '<your-imap-server>'
 FILTER_FROM = '<filter-all-emails-from-X>'
-FILTER_HEADER = '<filter-the-header-that-contains-X>'
+FILTER_SUBJECT = '<filter-the-subject-that-contains-X>'
 
 
 def extract_html(html):
@@ -58,7 +58,7 @@ def pull_tickets(n: int):
                         subject, encoding = decode_header(msg['Subject'])[0]
                         if isinstance(subject, bytes):
                             subject = subject.decode(encoding)
-                        if FILTER_HEADER in subject:
+                        if FILTER_SUBJECT in subject:
                             content_type = msg.get_content_type()
                             if content_type == 'text/html':
                                 body = msg.get_payload(decode=True).decode()
